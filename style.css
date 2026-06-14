@@ -1,3 +1,6 @@
+* {
+    margin-top: 3px;
+}
 #top-bar {
     background-color: blue;
     width: 100%;
