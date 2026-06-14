@@ -7,7 +7,7 @@ body {
     top: 0px;
 }
 #top-bar {
-    background-color: blue;
+    background-color: rgba(0, 0, 255, 0.363);
     width: 100%;
     position: fixed;
     top: 0px;
