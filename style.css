@@ -8,3 +8,10 @@
     margin-left: 0px;
     
 }
+
+#top-bar a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 10px;
+}
