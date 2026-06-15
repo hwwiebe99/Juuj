@@ -83,27 +83,50 @@ body {
     cursor: none;
 }
 #content-people {
+    background-color: rgb(170, 164, 164);
+    position: absolute;
     display: flex;
-    gap: 60px;
-    text-decoration: none;
-    font-size: 20px;
     flex-direction: row;
-    flex-wrap: wrap;
-    text-align: left;
-    padding: 0px 5px;
-    margin: auto auto;
+    text-transform: auto;
+    justify-content: center;
+    justify-items: center;
+    gap: 26px;
+    width: 95%;
+    height: 800px;
 
 }
 
 #content-people h1{
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 40px;
 }
 #content-people img {
-    position: absolute;
-    top: 55px;
     width: 100px;
     height: 100px;
     border-radius: 30%;
+}
+
+#content-people h1 img {
+    width: 100px;
+    height: 100px;
+    transform: translateX(-10%);
+}
+#content-people h1 #professor-img {
+    width: 100px;
+    height: 100px;
+    transform: translateX(158%);
+}
+
+#content-people h1 #Daniel-Robotnick-img {
+    width: 100px;
+    height: 100px;
+    font-size: 20px;
+    transform: translateX(15%);
+}
+
+#content-people #Daniel-Robotnick-text {
+    font-size: 20px;
 }
