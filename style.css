@@ -5,6 +5,7 @@ body {
     border-radius: 2px;
     background-color: gray;
     margin: 0px;
+    z-index: 1000;
 }
 
 *:not(#top-bar) {
