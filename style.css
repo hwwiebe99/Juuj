@@ -17,7 +17,7 @@ body {
     position: fixed;
     justify-content: left;
     height: 70px;
-    width: 94%;
+    width: 95%;
     left: 50%;
     transform: translateX(-50%);
     top: 10px;
@@ -42,7 +42,6 @@ body {
     margin-top: 150px;
     margin-top: 150px;
     background-color: rgb(170, 164, 164);
-    display:flex;
     padding: 10px;
     position: absolute;
     left: 50%;
@@ -52,10 +51,34 @@ body {
     border-radius: 40px;
     z-index: 10;
 }
-#content p a {
-    padding: 10px 10px;
+#content  {
+    display: inline-block;
+    text-decoration: none;
+    vertical-align: top;
+    margin-right: 4%;
 }
-actual-content p a{
-    padding: 10px;
+#actual-content  {
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    flex-direction: row;
+    text-align: left;
+    padding: 0px 5px;
+    margin: auto auto;
 
+}
+#actual-content a {
+    color: black;
+    text-decoration: none;
+}
+#actual-content a:visited {
+    color: black;
+    text-decoration: dotted;
+}
+
+#actual-content a:hover {
+    color: rgb(170, 164, 164);
+    text-decoration: wavy;
+    cursor: none;
 }
