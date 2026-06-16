@@ -142,7 +142,12 @@ body {
 #content-people h1 #professor-img {
     width: 100px;
     height: 100px;
-    transform: translateX(158%);
+    transform: translateX(5%);
+}
+#content-people #professor-text
+{
+    font-size: 10;
+    margin-right: 5px;
 }
 
 #content-people h1 #Daniel-Robotnick-img {
