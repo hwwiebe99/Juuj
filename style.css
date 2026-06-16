@@ -89,10 +89,11 @@ body {
     flex-direction: row;
     text-transform: auto;
     justify-content: center;
-    justify-items: center;
     gap: 26px;
     width: 95%;
-    height: 800px;
+    height: 2000px;
+    left: 50%;
+    transform: translate(-50%, 0%);
 
 }
 
