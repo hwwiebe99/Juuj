@@ -27,12 +27,22 @@ body {
     
 }
 
+#top-bar div {
+    margin-right: 40px;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    border: solid rgba(72, 72, 241, 0.158);
+    border-radius: 10px;
+    width: 80px;
+    white-space: nowrap;
+    padding: 20px 5px
+}
 
 #top-bar a {
     color: white;
     text-decoration: none;
     font-size: 20px;
-    padding: 10px 10px;
 }
 
 #top-bar a:visited {
