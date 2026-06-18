@@ -1,0 +1,162 @@
+/*  index.html    */
+
+body {
+    height: 2000px;
+    width: 99%;
+    border: 10px solid black;
+    border-radius: 2px;
+    background-color: gray;
+    margin: 0px;
+    z-index: 1000;
+}
+
+*:not(#top-bar) {
+}
+#top-bar {
+    background-color: rgba(0, 0, 255, 0.363);
+    z-index: 100;
+    display: flex;
+    position: fixed;
+    justify-content: left;
+    height: 70px;
+    width: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10px;
+    padding: 30px 40px;
+    margin-top: 0px;
+
+    
+}
+
+#top-bar div {
+    margin-right: 40px;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    border: solid rgba(72, 72, 241, 0.158);
+    border-radius: 10px;
+    width: 80px;
+    white-space: nowrap;
+    padding: 20px 5px
+}
+
+#top-bar a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#top-bar a:visited {
+    color: white;
+}
+#content {
+    margin-top: 150px;
+    margin-top: 150px;
+    background-color: rgb(170, 164, 164);
+    padding: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 97%;
+    height: 1800px;
+    border-radius: 40px;
+    z-index: 10;
+}
+#content  {
+    display: inline-block;
+    text-decoration: none;
+    vertical-align: top;
+    margin-right: 4%;
+}
+#actual-content  {
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    flex-direction: row;
+    text-align: left;
+    padding: 0px 5px;
+    margin: auto auto;
+
+}
+#actual-content a {
+    color: black;
+    text-decoration: none;
+}
+#actual-content a:visited {
+    color: black;
+    text-decoration: dotted;
+}
+
+#actual-content a:hover {
+    color: rgb(170, 164, 164);
+    text-decoration: wavy;
+    cursor: none;
+}
+
+
+
+
+
+
+/*people.html page                     */
+
+
+
+
+
+#content-people {
+    background-color: rgb(170, 164, 164);
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    text-transform: auto;
+    justify-content: center;
+    gap: 26px;
+    width: 95%;
+    height: 2000px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+
+}
+
+#content-people h1{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-decoration: none;
+    font-size: 40px;
+}
+#content-people img {
+    width: 100px;
+    height: 100px;
+    border-radius: 30%;
+}
+
+#content-people h1 img {
+    width: 100px;
+    height: 100px;
+    transform: translateX(-10%);
+}
+#content-people h1 #professor-img {
+    width: 100px;
+    height: 100px;
+    transform: translateX(5%);
+}
+#content-people #professor-text
+{
+    font-size: 10;
+    margin-right: 5px;
+}
+
+#content-people h1 #Daniel-Robotnick-img {
+    width: 100px;
+    height: 100px;
+    font-size: 20px;
+    transform: translateX(15%);
+}
+
+#content-people #Daniel-Robotnick-text {
+    font-size: 20px;
+}
