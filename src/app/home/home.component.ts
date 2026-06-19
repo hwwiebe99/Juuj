@@ -7,9 +7,12 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 })
 export class HomeComponent {
   @ViewChild('music') musicRef!: ElementRef<HTMLAudioElement>;
+  private audioUnlocked: boolean = false;
 
   ngOnInit() {
-    
+    if (this.audioUnlocked) {
+      this.musicRef.nativeElement.play();
+    }
   }
 
   ngAfterViewInit() {
@@ -17,6 +20,8 @@ export class HomeComponent {
     audio.volume = 0.2;
     audio.play();
 
-    audio.muted = false;
+    document.addEventListener('click', () => {
+    this.audioUnlocked = true;
+}, { once: true });
   }
 }
