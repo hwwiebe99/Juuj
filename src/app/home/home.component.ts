@@ -16,5 +16,7 @@ export class HomeComponent {
     const audio = this.musicRef.nativeElement;
     audio.volume = 0.2;
     audio.play();
+
+    audio.muted = false;
   }
 }
