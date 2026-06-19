@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
 @Component({
   selector: 'my-favorite-place-button',
@@ -6,6 +6,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./my-favorite-place-button.component.scss']
 })
 export class MyFavoritePlaceButtonComponent {
+  @Input ('message') message: string [] = ['Candy Mans Worst Night Mare'];
+  @Input ('color') color: string = '';
   buttonPages: string [] = ['My/Favorite/Place'];
   constructor(private router: Router)
   {
