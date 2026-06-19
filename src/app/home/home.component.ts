@@ -13,6 +13,8 @@ export class HomeComponent {
   }
 
   ngAfterViewInit() {
-    this.musicRef.nativeElement.volume = 0.2;
+    const audio = this.musicRef.nativeElement;
+    audio.volume = 0.2;
+    audio.play();
   }
 }
