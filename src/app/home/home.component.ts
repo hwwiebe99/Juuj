@@ -1,4 +1,5 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
+import { AudioService } from '../services/audio.service';
 
 @Component({
   selector: 'app-home',
@@ -6,22 +7,13 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-  @ViewChild('music') musicRef!: ElementRef<HTMLAudioElement>;
-  private audioUnlocked: boolean = false;
+  constructor(private audio: AudioService) {}
 
   ngOnInit() {
-    if (this.audioUnlocked) {
-      this.musicRef.nativeElement.play();
-    }
+    
   }
 
   ngAfterViewInit() {
-    const audio = this.musicRef.nativeElement;
-    audio.volume = 0.2;
-    audio.play();
-
-    document.addEventListener('click', () => {
-    this.audioUnlocked = true;
-}, { once: true });
+    this.audio.play("assets/juuj-home.mp3");
   }
 }
