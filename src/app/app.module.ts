@@ -8,6 +8,7 @@ import { DangerButtonComponent } from './danger-button/danger-button.component';
 import { RedirectionComponent } from './redirection/redirection.component';
 import { MyFavoritePlaceComponent } from './my-favorite-place/my-favorite-place.component';
 import { MyFavoritePlaceButtonComponent } from './my-favorite-place-button/my-favorite-place-button.component';
+import {  HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { MyFavoritePlaceButtonComponent } from './my-favorite-place-button/my-fa
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

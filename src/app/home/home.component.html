@@ -1,7 +1,20 @@
 <img class="title-image dance" src="assets/juuj-world.png" />
-<audio #music autoplay>
-  <source src="assets/juuj-home.mp3" type="audio/mpeg" />
-</audio>
-<div class="link-bar">
+<div class="content-container">
+  <div class="link-bar">
 
+  </div>
+  <div class="nl-container">
+    <div class="nl-title">Newsletter</div>
+    <div class="nl-list">
+      <div *ngFor="let nl of newsletters" class="nl-item" [style.background-color]="nl.backgroundColor">
+        <div class="nl-header">
+          <span class="today-ind" *ngIf="nl.date == today">(Today)</span> {{nl.date}} - <b>{{nl.title}}</b>
+        </div>
+        <div class="nl-content" [style.color]="nl.textColor">
+          {{nl.content}}
+        </div>
+      </div>
+    </div>
+    <button (click)="loadNewsletters()">Load more</button>
+  </div>
 </div>
