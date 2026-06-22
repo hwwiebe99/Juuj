@@ -11,7 +11,7 @@ export class DangerButtonComponent {
   @Input('color') color: string = '';
   buttonPages: string[] = ['', 'https://google.com'];
   constructor(private router: Router) {
-    
+    var i = 1;
   }
   ngOnInit(): void {
     console.log('Component initialized');
